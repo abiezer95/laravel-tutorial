@@ -1,0 +1,38 @@
+ console:
+ ☐ vendor\bin\phpunit //para pruebas laravel 
+ ☐ php artisan make:test nombredelarchivo //para generar un nuevo archivo de test, puedo usar Make: test, controller etc
+
+ into a file function:
+ ☐ $this->withoutExceptionHandling(); // to know the specific error of the code,, note: put this into the function or code you are making to know what will be.
+
+ ☐ si quiero invocar solo una funcion dentro de una class pero solo una funcion uso __invoke en vez del nombre de la function y al llamar a la clase no especificar el @name /nombre hijo de dicha clase
+
+ ☐ function e(content) para escapar contenido html, javascript etc 
+
+ ☐ para usar blade debemos especificar el nombre del archivo view con .blade.php
+
+ ☐ para incluir un view en el archivo principal @include('header') ej. header.blade.php 
+ post and get: 
+   ☐ if(request()->has('empty'))
+
+   ☐ constrollers
+ ☐ 
+   ☐ views 
+ ☐ 
+   ☐ routes 
+ ☐ 
+   ☐ migrations
+
+
+migration Database:
+  ☐ to configurate the DB conection go to the file ".env" in the main ./ path
+  ☐ php artisan migrate //to run the migration db function
+  destructive:
+  ☐ php artisan migrate:reset //to remove or reset the database
+  ☐ php artisan migrate:refresh //to refresh a table element
+  ☐ php artisan migrate:fresh //this remove all table and insert them again
+
+  better: 
+    ☐ php artisan migrate:rollback
+      ☐ put create_at the first word of a new migration to created better
+      ☐ we can use too the pamm name --create=name of the table // this is to has the code schema set as default
