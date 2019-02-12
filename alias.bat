@@ -1,10 +1,11 @@
 doskey l=dir $*
 ::php artisan commands
+doskey art:test=vendor\bin\phpunit
 doskey art=php artisan $*
-doskey art-up=php artisan serve $*
+doskey art-init=php artisan serve $*
 doskey art:seed=php artisan db:seed $*
 doskey artm:seed=php artisan make:seeder $*
-doskey artm:mt=php artisan make:test $*
+doskey artm:test=php artisan make:test $*
 doskey artm:mo=php artisan make:model $*
 doskey art:mi=php artisan migrate $*
 doskey art:fr=php artisan migrate:fresh $*
@@ -40,4 +41,5 @@ doskey tagl=git tag -l $*
 doskey log=git log --oneline $*
 doskey logd=git log --oneline --decorate $*
 doskey df=git diff $*
+doskey cln=git clone $*
 cls

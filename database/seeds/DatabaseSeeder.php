@@ -50,6 +50,6 @@ class DatabaseSeeder extends Seeder
         'profession_id' => $val
     ]);
 
-        //$this->call(ProfessionSeeder::class);
+        //$this->call(UsersTableSeeder::class);
     }
 }

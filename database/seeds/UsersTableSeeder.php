@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
-class ProfessionSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +11,6 @@ class ProfessionSeeder extends Seeder
      */
     public function run()
     {
-        
+        factory(App\User::class, 50)->create();
     }
 }
