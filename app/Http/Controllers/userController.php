@@ -24,7 +24,8 @@ class UserController extends Controller
     		'cuatro'
     	];
 
-    	$a = "Listado";
+		$a = "Listado";
+		
     	//return view('lista.lista', compact('lista', 'a'));
     	return view('lista.lista', compact('lista', 'a', 'users'));
     }
